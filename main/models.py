@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Post(models.Model):
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=1000)
@@ -20,3 +21,5 @@ class Employ(models.Model):
         return self.name
 
 
+class Company(models.Model):
+    pass
